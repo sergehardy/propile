@@ -95,3 +95,31 @@ Presenter.create!(
   profile_image: nil,
   website: nil,
 )
+
+
+email, pass = 'aurelian.morvant@gmail.com', '1ChatEstMort'
+
+
+
+me = Account.new
+me.id=3
+me.email = email
+me.maintainer = true # set to false if you want a presenter account
+me.password = pass
+me.password_confirmation = pass
+me.confirmed_at = Time.now
+
+me.save
+
+Presenter.create!(
+  id: 3,
+  name: nil,
+  bio: nil,
+  created_at: Time.new( 2012, 5, 4, 8, 43 ),
+  updated_at: Time.new( 2012, 5, 24, 21, 47 ),
+  account_id: me.id,
+  twitter_id: nil,
+  profile_image: nil,
+  website: nil,
+)
+
