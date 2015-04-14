@@ -49,7 +49,7 @@ Propile::Application.configure do
   config.assets.precompile += %w( account/sessions.css )
 
   # Disable delivery errors, bad email addresses will be ignored
-  # config.action_mailer.raise_delivery_errors = false
+  # config.action_mailer.raise_delivery_errors = false lit-woodland-2172.herokuapp.com
   config.action_mailer.default_url_options = { :host => 'secret-tundra-7433.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
