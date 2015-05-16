@@ -81,11 +81,11 @@ module Propile
     end
 
     def self.mail_subject_prefix
-      "[Agile Grenoble 2014]"
+      "[Agile Rennes 2015]"
     end
 
     def self.mail_sender
-      "orateur@agile-grenoble.org"
+      "cfp.agiletour2015@agilerennes.org"
     end
 
     def self.version
