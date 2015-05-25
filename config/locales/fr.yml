@@ -26,7 +26,12 @@ fr:
       new:
         send_password: "Réinitialiser le mot de passe"
   sessions:
-    captcha_error: "Vous n'avez pas rempli correctement le catcha"
+    captcha_error: "Vous n'avez pas rempli correctement le captcha"
+    title: "Titre"
+    subtitle: "Sous-titre"
+    first_presenter_email: "Email du premier orateur"
+    second_presenter_email: "Email du second orateur"
+
   recaptcha-not-reachable: "Recaptcha est injoignable"
   not_authorized: "Action non autorisée"
   activerecord:
@@ -34,8 +39,4 @@ fr:
       messages:
         record_invalid: "Enregistrement incorrect"
   
-  title: "Titre"
-  subtitle: "Sous-titre"
-  first_presenter_email: "Email du premier orateur"
-  second_presenter_email: "Email du second orateur"
   
