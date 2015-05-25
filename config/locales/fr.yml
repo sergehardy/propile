@@ -33,3 +33,9 @@ fr:
     errors:
       messages:
         record_invalid: "Enregistrement incorrect"
+  
+  title: "Titre"
+  subtitle: "Sous-titre"
+  first_presenter_email: "Email du premier orateur"
+  second_presenter_email: "Email du second orateur"
+  
