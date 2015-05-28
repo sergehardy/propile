@@ -11,10 +11,8 @@ class Session < ActiveRecord::Base
   CANCELED = 1
   CONFIRMED = 2
   AVAILABLE_TOPICS_AND_NAMES = {
-    "pleasure" => "Plaisir & Excellence",
-    "sharing" => "Partage & Émulation",
-    "desire" => "Désir & Réalité",
-    "change" => "Changement & Energie",
+    "atelier" => "Atelier",
+    "rex" => "REX",    
   }
   AVAILABLE_TOPICS_AND_NAMES_FOR_SELECT = AVAILABLE_TOPICS_AND_NAMES.invert
   AVAILABLE_TOPICS = AVAILABLE_TOPICS_AND_NAMES.keys
