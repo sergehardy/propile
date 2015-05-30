@@ -46,12 +46,8 @@ fr:
         room_setup: "Disposition de la pièce"
         intended_audience: "Public visé"
         materials_needed: "Matériel requis"
-<<<<<<< HEAD
         experience_level: "Niveau requis (Débutant, Expérimenté, Confirmé)"
-=======
-        experience_level: "Niveau requis"
->>>>>>> a02f0bb47622c790292636c92adc1b4d227a6e49
-        outline_or_timetable: ""
+        outline_or_timetable: "Déroulement de la session"
         material_description: "Matériel complémentaire souhaité"
         material_url: "URL de description du matériel complémentaire souhaité"
         
