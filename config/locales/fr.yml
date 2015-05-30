@@ -40,7 +40,7 @@ fr:
         session_goal: "But de la session"
         session_type: "Langue"
         max_participants: "Nombre maximum de participants"
-        session_topic: "Format"
+        topic: "Format"
         laptops_required: "Ordinateur requis"
         duration: "Durée (20, 50, 110)"
         room_setup: "Disposition de la pièce"
