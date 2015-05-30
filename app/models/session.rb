@@ -11,18 +11,17 @@ class Session < ActiveRecord::Base
   CANCELED = 1
   CONFIRMED = 2
   AVAILABLE_TOPICS_AND_NAMES = {
-    "pleasure" => "Plaisir & Excellence",
-    "sharing" => "Partage & Émulation",
-    "desire" => "Désir & Réalité",
-    "change" => "Changement & Energie",
+    "conf" => "Conférence",
+    "atelier" => "Atelier",
+    "rex" => "Retour d'expérience",
   }
   AVAILABLE_TOPICS_AND_NAMES_FOR_SELECT = AVAILABLE_TOPICS_AND_NAMES.invert
   AVAILABLE_TOPICS = AVAILABLE_TOPICS_AND_NAMES.keys
   AVAILABLE_TOPIC_NAMES = AVAILABLE_TOPICS_AND_NAMES.values
   AVAILABLE_LAPTOPS_REQUIRED = { "non" => "non", "oui" => "oui"}
-  AVAILABLE_DURATION = [ "25 min", "50 min", "110 min", "140 min" ]
+  AVAILABLE_DURATION = [ "20 min", "50 min", "110 min" ]
   AVAILABLE_SESSION_TYPE = [ "Session en français", "Session in english" ]
-  AVAILABLE_STATES = {"Draft" => 0, "Canceled" => 1, "Confirmed" => 2 }
+  AVAILABLE_STATES = {"Brouillon" => 0, "Annulé" => 1, "Validé" => 2 }
 
   FIELDS_THAT_NEED_TO_BE_COMPLETE=[:short_description, :session_type, :duration, :session_goal, :outline_or_timetable]
 
