@@ -21,7 +21,7 @@ class Session < ActiveRecord::Base
   AVAILABLE_LAPTOPS_REQUIRED = { "non" => "non", "oui" => "oui"}
   AVAILABLE_DURATION = [ "20 min", "50 min", "110 min" ]
   AVAILABLE_SESSION_TYPE = [ "Session en français", "Session in english" ]
-  AVAILABLE_STATES = {"Brouillon" => 0, "Annulé" => 1, "Validé" => 2 }
+  AVAILABLE_STATES = {"Brouillon" => 0, "Annulée" => 1, "Validée" => 2 }
 
   FIELDS_THAT_NEED_TO_BE_COMPLETE=[:short_description, :session_type, :duration, :session_goal, :outline_or_timetable]
 
