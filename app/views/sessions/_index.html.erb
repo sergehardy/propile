@@ -7,9 +7,7 @@
 <% end %>
     <!--th> <% if sortable %> <%= sortable "title" %> <% else %> Title <% end %> </th-->
     <th> <%= sortable ? sortable("title") : "Titre"  %> </th>
-<% if @show_presenter_active  %>
-    <th> <%= sortable ? sortable("presenters", "Orateur(s)") : "Orateur(s)" %> </th>
-<% end %>
+
     <th> <%= sortable ? sortable("reviewcount", "Reviews" ) : "Revues" %> </th>
     <th> <%= sortable ? sortable("topic") : "Track" %> </th>
     <th> <%= sortable ? sortable("created_at", "Created" ) : "Crée" %> </th>
@@ -30,9 +28,7 @@
     <td> <% if session.presenter_has_voted_for?(@current_account.presenter.id) %> OUI  <% end %> </td>
 <% end %>
     <td> <%= link_to w(session.title) , session %></td>
-<% if @show_presenter_active  %>
-    <td> <%= session_presenter_names(session) %> </td>
-<% end %>
+
     <td> <%= session.reviews.length %> </td>
     <td class="<%= session.topic %>"> <%= session.topic_name %> </td>
     <td class="nowrap" ><%= l session.created_at %> </td>
