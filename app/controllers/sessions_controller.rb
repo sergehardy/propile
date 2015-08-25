@@ -92,7 +92,7 @@ class SessionsController < ApplicationController
     @sessions = Session.all
     session_csv = CSV.generate(options = { :col_sep => ';' }) do |csv| 
       #header row
-      csv << [ "Id", "Url", "Titre", "Soustitre",
+      csv << [ "Id","Titre", "Soustitre",
         "Orateurs", "Créée", "Modifiée",
         "Langue", "Nature", "Durée",
         "Revue",
@@ -102,7 +102,7 @@ class SessionsController < ApplicationController
         "Desc. Courte" ]
       #data row
       @sessions.each do |session| 
-        csv << [ session.id, "http://cfp.agiletour.agilerennes.org/sessions/"+session.id, session.title, session.sub_title, 
+        csv << [ session.id, session.title, session.sub_title, 
           session.presenter_names, session.created_at, session.updated_at,
           session.session_type, session.topic_name, session.duration,
           session.reviews.size,
