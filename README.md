@@ -23,10 +23,10 @@ Some environment variables are needed to set up the app :
 * `PROPILE_PROD_DB_USER`
 * `PROPILE_PROD_DB_PASS`
 
-#### Mailer (with Mandrill service)
+#### Mailer (with Sendgrid service)
 
-* `MANDRILL_USERNAME`
-* `MANDRILL_APIKEY`
+* `SENDGRID_USERNAME`
+* `SENDGRID_PASSWORD`
 
 You only need the first six for a development environment, set them in your
 .bashrc, .tmuxrc, or whatever you want than will set environment variables for
